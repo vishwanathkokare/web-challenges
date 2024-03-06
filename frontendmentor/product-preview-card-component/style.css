@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Outfit:wght@100..900&display=swap');
+
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    font-size: 1.4rem;
+    background-color: var(--Cream);
+    padding: 2rem 1rem;
+    font-family: "Outfit", sans-serif;
+    display: grid;
+    place-content: center;    
+}
+
+.card{
+    width: 100%;
+    max-width:80rem;
+    border-radius: 1.2rem;
+    background-color: var(--White);
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+.img_box{
+    width: 100%;
+}
+.img_box_img{
+    max-width: 100%;
+    object-fit: cover;
+}
+.two{
+    padding:1rem 2rem 3rem 2rem;
+}
+.mini_title{
+    color: var(--Dark-grayish-blue);
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    font-weight: 500;
+}
+h1{
+    margin:.5rem 0;
+    font-family: "Fraunces", serif;
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--Very-dark-blue);
+}
+p{
+    color:var(--Dark-grayish-blue);
+    font-weight: 500;
+    font-size: 1.6rem;
+    margin: 1rem 0;
+}
+.price{
+    margin: 2rem 0 1rem 0;
+    font-weight: 400;
+}
+.price_offer_value{
+    color:var(--Dark-cyan);
+    font-size: 4rem;
+    font-weight: 700;
+    font-family: "Franunces",serif;
+}
+.price_value{
+    text-decoration: line-through;
+    vertical-align: super;
+    margin-left: 1rem;
+    font-size: 1.8rem;
+    color: var(--Dark-grayish-blue);
+}
+.btn{
+    margin-top: 1rem;
+    width: 100%;
+    display: block;
+    padding: 1.5rem 0;
+    border-radius: 1.1rem;
+    color: var(--White);
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--Dark-cyan);
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+.btn i{
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+@media screen and (min-width:600px) {
+    main{
+        display: flex;
+        flex-flow: row nowrap;
+    }
+   .img_box{
+    width: 50%;
+   }
+   .two{
+    padding: 8rem 3rem;
+    width: 50%;
+   }
+   .img_box_img{
+    height: 100%;
+   }
+}
