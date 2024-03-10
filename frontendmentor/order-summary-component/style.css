@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root{
+--Pale-blue: hsl(225, 100%, 94%);
+--Bright-blue: hsl(245, 75%, 52%);
+--Very-pale-blue: hsl(225, 100%, 98%);
+--Desaturated-blue: hsl(224, 23%, 55%);
+--Dark-blue: hsl(223, 47%, 23%);
+}
+
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    font-size: 1.6rem;
+    font-family: "Red Hat Display", sans-serif; 
+    display: grid;
+    place-content: center;
+    padding:0 1.5rem;
+    color:var(--Desaturated-blue);
+    background-color: var(--Pale-blue);
+    background-image: url('images/pattern-background-mobile.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.card{
+    width:100%;
+    max-width: 40rem;
+    border-radius: 1.2rem;
+    background-color: white;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+.hero{
+    border-radius: 1.2rem;
+}
+
+.card_hero_img{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card_subject{
+    text-align: center;
+    padding: 2rem 3rem;
+}
+
+.card_heading,.plans_plan_heading{
+    color: var(--Dark-blue);
+    font-weight: 900;
+}
+
+.card_paragraph{
+    margin:2rem 0 4rem 0;
+    line-height: 2.8rem;
+    font-weight: 500;
+}
+
+.card_plans{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin-bottom: 2rem;
+    background-color: var(--Very-pale-blue);
+    border-radius: 1.2rem;
+    padding: 1.5rem;
+}
+
+.card_plans_img_box{
+    margin-right: 2rem;
+}
+
+.plans_plan{
+    text-align: left;
+}
+
+.plans_plan_btn{
+    margin-left: auto;
+    font-weight: 500;
+    color: var(--Bright-blue);
+}
+
+.plans_plan_btn:hover{
+    text-decoration: none;
+}
+
+.card_active_btn{
+    text-decoration: none;
+    display: block;
+    background-color: var(--Bright-blue);
+    color: white;
+    padding: 1.5rem 0;
+    border-radius: 1.2rem;
+    font-weight: 900;
+}
+
+.card_active_btn:hover{
+    opacity: .5;
+}
+
+.card_btn{
+    display: block;
+    text-decoration: none;
+    font-weight: 900;
+    color:var(--Desaturated-blue);
+    margin: 2rem 0;
+}
+
+.card_btn:hover{
+    color:var(--Dark-blue);
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (min-width:600px) {
+   body{
+    background-image: url('images/pattern-background-desktop.svg');
+   }
+}
