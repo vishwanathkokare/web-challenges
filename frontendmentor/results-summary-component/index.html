@@ -1,43 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Results summary component</title>
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
+
 <body>
+  <main>
+    <section class="result_score">
+      <p>Your Result</p>
+      <section class="score">
+        <h2>76</h2>
+        <p>of 100</p>
+      </section>
+      <h1>Great</h1>
+      <p>You scored higher than 65% of the people who have taken these tests.
+      </p>
+    </section>
+    <section class="summary">
+      <h4 class="head">Summary</h4>
+      <section class="reaction_score summary_box">
+        <h4><img src="images/icon-reaction.svg" alt="Img ">Reaction</h4>
+        <p><b>80</b> / 100
+        </p>
+      </section>
+      <section class="memory_score summary_box">
+        <h4><img src="images/icon-memory.svg" alt="Img"></span>Memory</h4>
+        <p><b>92</b> / 100
+        </p>
+      </section>
+      <section class="verbal_score summary_box">
+        <h4><span><img src="images/icon-verbal.svg" alt="Img"></span>Verbal</h4>
+        <p><b>61</b> / 100
+        </p>
+      </section>
+      <section class="visual_score summary_box">
+        <h4><span><img src="images/icon-visual.svg" alt="Img"></span>Visual</h4>
+        <p><b>72</b> / 100</p>
+      </section>
+      <a href="#">Continue</a>
+    </section>
+  </main>
 
-  Your Result
-  76
-  of 100
-
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
-
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
-  
   <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://www.frontendmentor.io/profile/vishwanathkokare">Vishwanath Kokare</a>.
   </footer>
 </body>
+
 </html>
