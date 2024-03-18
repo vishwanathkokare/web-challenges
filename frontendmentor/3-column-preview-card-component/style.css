@@ -8,6 +8,12 @@
     --Very-light-gray-background--headings-buttons: hsl(0, 0%, 95%);
 }
 
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html{
     font-size: 62.5%;
 }
@@ -16,6 +22,87 @@ body{
     font-size: 1.5rem;
     width: 100%;
     min-height: 100vh;
+    padding: 5rem 2rem;
+}
+
+h2{
+    font-family: "Big Shoulders Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 4rem;
+    color:var(--Very-light-gray-background--headings-buttons);
+}
+
+p{
+    color:var(--Transparent-white-paragraphs);
+    font-size: 1.8rem;
+}
+
+p,a{
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+.card{
+    margin-bottom: 2rem;
+    width:100%;
+    border-radius: 1.2rem;
+    overflow: hidden;
+}
+
+.card_component{
+    width:100%;
+    padding: 4rem 8rem;
+}
+
+.card_component h2{
+    margin: 3rem 0;
+}
+
+.card_component a.btn{
+    display: inline-block;
+    border-radius: 2.5rem;
+    background-color: #ffffff;
+    margin-top: 3rem;
+    padding: 1.5rem 3rem;
+}
+
+.card_component a.btn:hover{
+    border: 2px solid #ffffff;
+    color:#ffffff;
+    background-color: transparent;
+}
+
+.sedans{
+    background-color: var(--Bright-orange);
+}
+
+.sedans a.btn{
+    color:var(--Bright-orange);
+}
+
+.suv{
+    background-color: var(--Dark-cyan);
+}
+
+.suv a.btn{
+    color:var(--Dark-cyan);
+}
+
+.luxury{
+    background-color: var(--Very-dark-cyan);
+}
+
+.luxury a.btn{
+    color:var(--Very-dark-cyan);
 }
 
 .attribution { 
@@ -23,4 +110,23 @@ body{
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (min-width:700px) {
+
+    body{
+        display: grid;
+        place-content: center;
+    }
+
+    .card{
+        max-width:100rem; 
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: start;
+    }
+
+   .card_component{
+    flex: 1;
+   }
 }
