@@ -126,5 +126,11 @@ body{
 @media screen and (max-width:800px) {
    .card{
     display: block;
-   } 
+   }
+   .subscription{
+    width: 100%;
+   }
+   .why_us{
+    width: 100%;
+   }
 }
