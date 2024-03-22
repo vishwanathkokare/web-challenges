@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root{
+--Cyan: hsl(179, 62%, 43%);
+--Bright-Yellow: hsl(71, 73%, 54%);
+--Light-Gray: hsl(204, 43%, 93%);
+--Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    width: 100%;
+    min-height: 100vh;
+    font-family: "Karla", sans-serif;
+    background-color: var(--Light-Gray);
+    display: grid;
+    place-content: center;
+    padding:0 2.5rem;
+}
+
+.card{
+    border-radius: .8rem;
+    overflow: hidden;
+    width: 100%;
+    max-width: 90rem;
+    display: grid;
+    grid-template-columns: auto auto ;
+    grid-template-rows: auto auto ;
+}
+
+
+.join{
+    padding: 2.5rem;
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    background-color: #fff;
+}
+
+.join > h1{
+ color: var(--Cyan);
+}
+
+.green{
+    color: var(--Bright-Yellow);
+    margin: 1rem 0;
+}
+
+.join_para{
+    color: var(--Grayish-Blue);
+    line-height: 2;
+}
+
+.subscription{
+    padding: 2rem;
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    background-color: var(--Cyan);
+    color: #fff;
+}
+
+.subscription_price{
+    display: inline-flex;
+    gap: 1rem;
+}
+
+.subscription_price > h3{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.subscription_price >p{
+    vertical-align: middle;
+    color: var(--Grayish-Blue);
+}
+
+.btn{
+    text-align: center;
+    font-weight: 700;
+    display: block;
+    text-decoration: none;
+    color: white;
+    border-radius: 1rem;
+    background-color: var(--Bright-Yellow);
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+}
+
+
+.why_us{
+    padding: 2rem;
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+    background-color: var(--Grayish-Blue);
+    color: #fff;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
