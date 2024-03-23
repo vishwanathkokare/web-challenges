@@ -25,7 +25,7 @@ body{
     background-color: var(--Light-Gray);
     display: grid;
     place-content: center;
-    padding:0 2.5rem;
+    padding: 0 2rem;
 }
 
 .card{
@@ -34,15 +34,15 @@ body{
     width: 100%;
     max-width: 90rem;
     display: grid;
-    grid-template-columns: auto auto ;
-    grid-template-rows: auto auto ;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
     margin-bottom: 2rem;
 }
 
 
 .join{
-    padding: 2.5rem;
-    grid-column: 1 / 4;
+    padding: 3rem 2.5rem;
+    grid-column: 1 / 3;
     grid-row: 1 / 2;
     background-color: #fff;
 }
@@ -62,11 +62,9 @@ body{
 }
 
 .subscription{
-    min-width: 100%;
-    width: 45rem;
-    padding: 2.5rem;
+    padding: 3rem 2.5rem;
     grid-column: 1 / 2;
-    grid-row: 3 / 4;
+    grid-row: 2 / 3;
     background-color: var(--Cyan);
     opacity: .9;
     color: #fff;
@@ -102,11 +100,9 @@ body{
 
 
 .why_us{
-    width: 45rem;
-    min-width: 100%;
-    padding: 2.5rem;
-    grid-column: 3 / 4;
-    grid-row: 3 / 4;
+    padding:3rem 2.5rem;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
     background-color: var(--Cyan);
     opacity: .7;
     color: #fff;
@@ -126,11 +122,19 @@ body{
 @media screen and (max-width:800px) {
    .card{
     display: block;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+   }
+   .join{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
    }
    .subscription{
-    width: 100%;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
    }
    .why_us{
-    width: 100%;
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
    }
 }
