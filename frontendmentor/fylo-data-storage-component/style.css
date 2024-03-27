@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+    --Gradient: ;
     --Pale-Blue: hsl(243, 100%, 93%);
     --Grayish-Blue: hsl(229, 7%, 55%);
     --Dark-Blue: hsl(228, 56%, 26%);
@@ -26,7 +26,7 @@ body {
     font-size: 1.4rem;
     font-family: "Raleway", sans-serif;
     background-image: url('images/bg-mobile.png');
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     display: grid;
     place-content: center;
@@ -38,11 +38,132 @@ li{
 
 a{
     text-decoration: none;   
+    color: #fff;
 }
 
 .fylo_component{
+    width: 20rem;
+    min-width: 98%;
     display: flex;
     gap: 2rem;
     flex-flow: column nowrap;
+    margin-bottom: 4rem;
 }
 
+.fylo_component_header_and_nav{
+    padding: 2rem 0 2rem 3rem;
+    background-color: var(--Dark-Blue);
+    border-radius: 1rem;
+    border-top-right-radius: 8rem;
+}
+
+.fylo_component_header_and_nav nav>ul{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.fylo_component_header_and_nav nav{
+    margin-top: 2rem;
+}
+
+.fylo_component_header_and_nav nav>ul>li{
+    background-color: var(--Very-Dark-Blue);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.fylo_component_header_and_nav nav>ul>li>a{
+    display: inline-block;
+    width:2rem;
+    height: 2rem;
+}
+
+.fylo_component_header_and_nav nav>ul>li>a>img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.fylo_component_data_usages{
+    position: relative;
+    padding: 2rem 3rem;
+    text-align: center;
+    background-color: var(--Dark-Blue);
+    border-radius: 1rem;
+    color: #ffffff86;
+}
+
+.progress{
+    background-color: var(--Very-Dark-Blue);
+    height: 2rem;
+    border-radius: 1.4rem;
+    position: relative;
+    margin: 2rem 0 1rem 0;
+    margin-bottom: 5rem;
+}
+
+.progress::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 20%;
+    border-radius: 1.4rem;
+    padding: -1rem;
+    background: linear-gradient(hsl(6, 100%, 80%) to hsl(335, 100%, 65%));
+}
+
+.fylo_component_data_usages b,.start_progress,.end_progress{
+    color: var(--Pale-Blue);
+    font-weight: 700;
+}
+
+.start_progress{
+    position: absolute;
+    bottom: -2.5rem;
+    left: 0;
+}
+
+.end_progress{
+    position: absolute;
+    right: 0;
+    bottom: -2.5rem;
+}
+
+.left_data{
+    display: inline-block;
+    width: 15rem;
+    position: absolute;
+    left: 30%;
+    right: 50%;
+    bottom: -10rem;
+    transform: translateX(-50%,-50%);
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    background-color: var(--Pale-Blue);
+    color: var(--Grayish-Blue);
+    border-radius: 1.2rem;
+}
+
+.left_data b {
+    text-transform: none;
+    font-size: 2.5rem;
+    color: var(--Very-Dark-Blue);
+    vertical-align: sub;
+    margin-right: .5rem;
+}
+
+
+.attribution a{
+    text-decoration: underline;
+}
+
+.attribution a:hover{
+    text-decoration: none;
+}
