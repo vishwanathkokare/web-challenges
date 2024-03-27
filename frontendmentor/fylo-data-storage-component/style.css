@@ -25,5 +25,24 @@ body {
     min-height: 100vh;
     font-size: 1.4rem;
     font-family: "Raleway", sans-serif;
-    color: #fff;
+    background-image: url('images/bg-mobile.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: grid;
+    place-content: center;
 }
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;   
+}
+
+.fylo_component{
+    display: flex;
+    gap: 2rem;
+    flex-flow: column nowrap;
+}
+
