@@ -42,7 +42,6 @@ a{
 }
 
 .fylo_component{
-    width: 20rem;
     min-width: 98%;
     display: flex;
     gap: 2rem;
@@ -159,6 +158,9 @@ a{
     margin-right: .5rem;
 }
 
+.attribution {
+    text-align: center;
+}
 
 .attribution a{
     text-decoration: underline;
@@ -166,4 +168,16 @@ a{
 
 .attribution a:hover{
     text-decoration: none;
+}
+
+@media screen and (min-width:750px) {
+   .fylo_component{
+     flex-direction: row;
+   } 
+   .fylo_component_header_and_nav{
+    width: 28rem;
+   }
+   .fylo_component_data_usages{
+    width: 38rem;
+   }
 }
