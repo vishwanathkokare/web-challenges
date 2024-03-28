@@ -35,6 +35,8 @@
   }
 
   li {
+      width: 100%;
+      text-align: center;
       list-style-type: none;
       border: 1px solid #fff;
       padding: 1rem;
@@ -55,4 +57,11 @@
   li:hover {
       transform: scale(1.05);
       margin: 1rem;
+  }
+
+  @media  screen and (min-width:600px) {
+    li{
+        width: initial;
+    }
+    
   }
