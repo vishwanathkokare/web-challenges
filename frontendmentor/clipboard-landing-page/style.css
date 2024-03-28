@@ -176,6 +176,11 @@ footer{
         font-size: 70%;
     }
 
+    body{
+        background-image: url('images/bg-header-desktop.png');
+        background-size: 100% 10%;
+    }
+
     .btn{
         display: inline-block;
         padding: 1.5rem 4rem;
