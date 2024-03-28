@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --Gradient: ;
+    --Gradient: hsl(6, 100%, 80%) , hsl(335, 100%, 65%);
     --Pale-Blue: hsl(243, 100%, 93%);
     --Grayish-Blue: hsl(229, 7%, 55%);
     --Dark-Blue: hsl(228, 56%, 26%);
@@ -95,6 +95,16 @@ a{
     color: #ffffff86;
 }
 
+.progress::before{
+    content: '';
+    position: absolute;
+    inset: .20rem;
+    right: 20%;
+    border-radius: 1.4rem;
+    background: -webkit-linear-gradient(var(--Gradient));
+    z-index: -1;
+}
+
 .progress{
     background-color: var(--Very-Dark-Blue);
     height: 2rem;
@@ -102,18 +112,19 @@ a{
     position: relative;
     margin: 2rem 0 1rem 0;
     margin-bottom: 5rem;
+    z-index: 0;
 }
 
 .progress::after{
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 20%;
-    border-radius: 1.4rem;
-    padding: -1rem;
-    background: linear-gradient(hsl(6, 100%, 80%) to hsl(335, 100%, 65%));
+    top: .25rem;
+    bottom: .25rem;
+    right: 21%;
+    background-color: #fff;
+    border-radius: 45%;
+    z-index: 0;
+    padding: 0rem .5rem;
 }
 
 .fylo_component_data_usages b,.start_progress,.end_progress{
