@@ -119,7 +119,7 @@ main{
 footer{
     padding: 2.5rem;
     margin-top: 18rem;
-    background-color: lightgray;
+    background-color: rgba(206, 206, 206, 0.63);
 }
 
 .footer_logo{
@@ -139,7 +139,11 @@ footer{
 }
 
 .nav_links > li > a{
-    color: var(--Dark-Grayish-Blue);
+    color: var(--Grayish-Blue);
+}
+
+.nav_links > li > a:hover{
+    color:var(--Strong-Cyan);
 }
 
 .nav_links{
@@ -157,12 +161,10 @@ footer{
 }
 
 .attribution {
-    font-size: 11px;
-    text-align: center;
-    color: #fff;
+    color: var(--Grayish-Blue);
 }
 
 .attribution a {
     text-decoration: underline;
-    color: hsl(228, 45%, 44%);
+    color: var(--Strong-Cyan);
 }
