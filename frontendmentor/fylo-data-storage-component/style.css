@@ -171,6 +171,12 @@ a{
 }
 
 @media screen and (min-width:750px) {
+    body{
+        background-color:var(--Very-Dark-Blue);
+        background-image: url('images/bg-desktop.png');
+        background-size: 100% 55%;
+        background-position: bottom;
+    }
    .fylo_component{
      flex-direction: row;
    } 
