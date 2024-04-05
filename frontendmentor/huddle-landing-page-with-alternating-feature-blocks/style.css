@@ -4,7 +4,7 @@
     --Pink: hsl(322, 100%, 66%);
     --Very-Pale-Cyan: hsl(193, 100%, 96%);
     --Very-Dark-Cyan: hsl(192, 100%, 9%);
-    --Grayish-Blue: hsl(208, 11%, 55%)
+    --Grayish-Blue: hsl(208, 11%, 55%);
 }
 
 *::before,
@@ -21,8 +21,161 @@ html {
 
 body {
     font-size: 1.8rem;
+    font-family: "Poppins", sans-serif;
     width: 100%;
     min-height: 100vh;
+}
+
+p{
+    margin: 1.25rem;
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.75;
+}
+
+li{
+    list-style: none;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+main{
+    text-align: center;
+}
+
+.hero{
+    background-image: url('images/bg-hero-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: 1;
+}
+
+.hero{
+    background-color: var(--Very-Pale-Cyan);
+    padding:3.5rem 2.5rem; 
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    margin-bottom: 6rem;
+}
+
+.head_logo{
+    width: 12rem;
+}
+
+.head_logo_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.head_btn{
+    background-color: white;
+    color: black;
+    padding: 0.75rem 4rem;
+    font-weight: 600;
+    border-radius: 2.3rem;
+}
+
+.hero_btn{
+    margin: 0 auto;
+    margin-top: 3.5rem;
+    display: block;
+    width: 70%;
+    padding: 1.5rem;
+    border-radius: 2.3rem;
+    background-color: var(--Pink);
+    color: white;
+}
+
+.boxes{
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    margin: 5rem 2.5rem;
+    border-radius: 1.2rem;
+}
+
+.reverse{
+    flex-direction: column-reverse;
+}
+
+.box_info,box_imgbox{
+    flex: 1;
+    margin: 5rem 0;
+}
+
+.box_imgbox{
+    width: 80%;
+}
+
+.box_imgbox_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.upfooter{
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    width: 96%;
+    background-color: white;
+    color: black;
+    padding: 2.5rem;
+    text-align: center;
+    border-radius: 2.6rem;
+
+}
+
+.upfooter > .hero_btn{
+    width: 25rem;
+}
+
+footer{
+    position: relative;
+    background-color: var(--Very-Dark-Cyan);
+    color: white;
+    margin-top: 10rem;
+    padding: 2.5rem;
+    padding-top: 15rem;
+}
+
+footer a, footer a:visited{
+    color: white;
+}
+
+.icon > svg {
+    width: 2rem;
+    vertical-align: middle;
+    margin-right: .75rem;
+    fill: white;
+}
+
+.social_nav_links{
+    margin-top: 2rem;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: .1rem;
+}
+
+.social_link{
+    margin-right: 1rem;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: .5rem;
+}
+
+.social_link > svg {
+    margin: auto;
 }
 
 .attribution {
@@ -32,4 +185,5 @@ body {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+    text-decoration: underline;
 }
