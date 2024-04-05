@@ -56,6 +56,10 @@ main{
     padding:3.5rem 2.5rem; 
 }
 
+.hero > .boxes{
+    box-shadow: initial;
+}
+
 header{
     display: flex;
     align-items: center;
@@ -80,6 +84,7 @@ header{
     padding: 0.75rem 4rem;
     font-weight: 600;
     border-radius: 2.3rem;
+    box-shadow:1px 1px 8px #2e2e2e;
 }
 
 .hero_btn{
@@ -93,12 +98,17 @@ header{
     color: white;
 }
 
+.hero_btn:hover{
+    opacity: .7;
+}
+
 .boxes{
     display: flex;
     align-items: center;
     flex-flow: column nowrap;
     margin: 5rem 2.5rem;
     border-radius: 1.2rem;
+    box-shadow:1px 1px 8px #2e2e2e;
 }
 
 .reverse{
@@ -132,6 +142,7 @@ header{
     padding: 2.5rem;
     text-align: center;
     border-radius: 2.6rem;
+    box-shadow:1px 1px 8px #2e2e2e;
 
 }
 
@@ -143,7 +154,7 @@ footer{
     position: relative;
     background-color: var(--Very-Dark-Cyan);
     color: white;
-    margin-top: 10rem;
+    margin-top: 15rem;
     padding: 2.5rem;
     padding-top: 15rem;
 }
