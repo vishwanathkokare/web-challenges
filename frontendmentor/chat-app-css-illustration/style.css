@@ -26,9 +26,228 @@ html{
 }
 
 body{
+    position: relative;
     font-size: 1.6rem;
     width: 100%;
     min-height: 100vh;font-family: "Rubik", sans-serif;
+    background-color: var(--Light-Grayish-Violet-app-background);
+}
+
+body::before{
+    content: '';
+    position: absolute;
+    left: -60%;
+    top: -10%;
+    background-image: linear-gradient(to bottom,var(--Light-Magenta),var(--Light-Violet));
+    background-repeat: no-repeat;
+    width: 50rem;
+    height: 50rem;
+    z-index: -1;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+main{
+    margin: 2.5rem;
+}
+
+.mobile{
+    background-color: var(--Light-Grayish-Violet-app-background);
+    max-width: 40rem;
+    border: 12px solid var(--White);
+    border-radius: 4.25rem;
+    overflow: hidden;
+}
+
+header{
+    position: relative;
+    padding:4rem 1.5rem 2rem 1.5rem;
+    background-image: linear-gradient(to left,var(--Light-Magenta),var(--Light-Violet));
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 1.2rem;
+    border-bottom-right-radius: 1.2rem;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+header::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 3rem;
+  background-color: var(--White);
+  z-index: 1;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
+.start{
+    color: var(--White);
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.profile_imgbox{
+    border:2px solid var(--White);
+    border-radius: 50%;
+    width: 3.55rem;
+    height:3.55rem;
+    overflow: hidden;
+}
+
+.profile_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile_info > h2{
+    color:var(--White);
+    font-size: 1.5rem;
+    margin-bottom: .25rem;
+}
+
+.profile_info > p{
+    color:var(--Pale-Violet-sub-heading-at-the-top-of-the-app-UI);
+    font-size: 1.25rem;
+}
+
+.end{
+    color: var(--White);
+    transform: rotateZ(90deg);
+    font-size: 2.75rem;
+    margin-left: auto;
+}
+
+.pink{
+    color:var();
+    background-color: var();
+    padding: 1.25rem;
+    margin-left: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 1.5rem 1.5rem 1.5rem .8rem;
+}
+
+.white{
+    color: black;
+    background-color: var(--White);
+    padding: 1.25rem;
+    margin-left: auto;
+    margin-right: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 1.5rem 1.5rem .8rem 1.5rem;
+}
+
+.chat_box{
+    font-size: 1.4rem;
+    line-height:1.5;
+    max-width: 60%;
+}
+
+.dogimgboxes{
+    margin-left: auto;
+    max-width: 60%;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1rem;
+    margin-bottom: 1.7rem;
+}
+
+.dog_imgbox{
+    width: 5rem;
+    height: auto;
+    border-radius: 1.2rem;
+    overflow: hidden;
+}
+
+.dog_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.checkboxes{
+    color: var(--White);
+    background-image: linear-gradient(to right,var(--Light-Magenta),var(--Light-Violet));
+    max-width:70%;
+    margin-bottom: 1.7rem;
+    margin-left:2rem;
+    border-radius: 1.5rem 1.5rem 1.5rem .8rem;
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    gap: 1rem;
+}
+
+#checkbox{
+    background-color: var(--Light-Violet);
+    border: 1px solid var(--Very-Light-Magenta-radio-button-outline);
+    outline:none;
+    cursor: pointer;
+}
+
+.checkboxes > p {
+    font-size:1.25rem;
+}
+
+.checkboxes > h2{
+    margin-left: auto;
+}
+
+.message{
+    width:100%;
+    padding:0 2rem;
+    margin-bottom: 1rem;
+}
+
+#message{
+    position: relative;
+    width: 100%;
+    padding: 1.5rem 0 1.5rem 2rem;
+    border: none;
+    outline: none;
+    border-radius: 2.5rem;
+}
+
+#message::placeholder{
+    color: var(--Grayish-Blue-placeholder-text);
+}
+
+.message_btn{
+    position: absolute;
+    text-decoration: none;
+    color: var(--White);
+    background-color:var(--Very-Dark-Desaturated-Violet-submit-button-background);
+    padding: 1rem;
+    border-radius:50%;
+    font-size:2rem;
+    right:15%;
+    margin-top: .2rem;
+    font-weight: 800;
+}
+
+.info{
+    margin: 8rem 0;
+    text-align: center;
+}
+
+.info > h1{
+    font-size: 3.7rem;
+    color: var(--Very-Dark-Desaturated-Violet-main-heading);
+}
+
+.info > p{
+    color: var(--Dark-Grayish-Violet-paragraph-);
+    margin: 1.5rem 0;
+    font-size: 1.75rem;
+    line-height: 1.75;
 }
 
 .attribution {
@@ -39,3 +258,4 @@ body{
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
+
