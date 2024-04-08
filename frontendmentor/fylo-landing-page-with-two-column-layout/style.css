@@ -107,6 +107,10 @@ a.btn{
 
 }
 
+a.btn:hover{
+    opacity: .8;
+}
+
 .productive{
  padding: 50px 15px;
  margin: 50px 0;
@@ -213,6 +217,10 @@ footer a{
     margin-top: 10px;
 }
 
+footer a:hover{
+    color: var(--Moderate-Cyan);
+}
+
 .foot_imgbox{
     margin-bottom: 20px;
     
@@ -246,6 +254,10 @@ footer a{
     height: 100%;
     margin: auto;
     vertical-align: middle;
+}
+
+.social_imgbox > svg:hover{
+    fill: var(--Moderate-Cyan);
 }
 
 .attribution {
