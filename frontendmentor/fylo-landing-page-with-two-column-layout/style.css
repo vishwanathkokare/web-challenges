@@ -38,7 +38,7 @@ header{
     align-items: center;
     justify-content: space-between;
     margin-top: 10px;
-    padding: 15px;
+    padding: 35px;
 }
 
 .header_imgbox{
@@ -70,7 +70,7 @@ header{
     display: flex;
     align-items: center;
     flex-flow: column-reverse wrap;
-    padding: 15px;
+    padding: 35px;
     margin: 25px 0;
     text-align: center;
 }
@@ -85,7 +85,7 @@ header{
     object-fit: cover;
 }
 
-.input >input{
+#mail{
     display: block;
     border: 1px solid #000;
     outline: none;
@@ -149,7 +149,7 @@ a.btn:hover{
 .quote{
     width: 80%;
     margin: 30px auto;
-    padding: 15px;
+    padding: 35px;
     background-color: white;
     border-radius: 10px;
 }
@@ -186,7 +186,7 @@ a.btn:hover{
 }
 
 .early_access{
-    padding: 15px;
+    padding: 45px;
     text-align: center;
     color: white;
     background-color: var(--Desaturated-Blue);
@@ -267,4 +267,65 @@ footer a:hover{
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width:750px) {
+     .hero{
+        flex-direction: row;
+        gap: 20px;
+        text-align: left;
+     }
+
+     .hero_imgbox,.hero>section{
+        flex: 1;
+     }
+
+    .input>.btn,#mail{
+        display: inline;
+    }  
+
+    #mail{
+        width: 70%;
+    }
+
+     .productive{
+        display: flex;
+        gap:20px;
+        flex-flow: row-reverse wrap;
+        align-items: center;
+     }
+
+     .productive h2 {
+        text-align: left;
+     }
+
+     .productive >section,
+     .productive_imgbox{
+        flex: 1;
+     }
+
+     .early_access{
+        display: flex;
+        gap: 50px;
+        text-align: left;
+     }
+
+     .early_access>section,.early_access>div{
+        flex: 1;
+     }
+
+     .early_access > div > a.btn{
+        max-width: 40%;
+     }
+
+     footer{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+     }
+
+     .social_media_links{
+        align-self: flex-start;
+        margin-top: 25px;
+     }
 }
