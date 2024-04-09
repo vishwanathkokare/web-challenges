@@ -74,14 +74,15 @@ h2{
     font-weight: bold;
 }
 
-.hero_imgbox{
-    padding: 15px 35px;
-}
 
 .hero_imgbox,.grow_imgbox,.flow_imgbox,.users_imgbox{
     width: 100%;
     height: auto;
     margin: 70px auto;
+}
+
+.hero_imgbox{
+    width: 90%;
 }
 
 .hero_img,.users_img,.flow_img,.grow_img,.foot_img,.social_link > svg{
