@@ -129,13 +129,89 @@ h2{
     padding: 15px 35px;
 }
 
+.grow,.users{
+    position: relative;
+    background-color: var(--Very-Pale-Blue);
+
+}
+.grow::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-image: url('images/bg-section-top-mobile-1.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100px;
+    transform: translateY(-100%);
+}
+
+.grow::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url('images/bg-section-bottom-mobile-1.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100px;
+    transform: translateY(100%);
+}
+
+.users::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-image: url('images/bg-section-top-mobile-2.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100px;
+    transform: translateY(-100%);
+}
+
+.users::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url('images/bg-section-bottom-mobile-2.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100px;
+    transform: translateY(100%);
+}
+
+
+
 footer{
+    position: relative;
     display: flex;
     flex-flow: column-reverse;
+    margin-top: 150px;
     gap: 40px;
     padding: 80px 35px;
     color: white;
     background-color: var(--Very-Dark-Cyan);
+}
+
+
+footer::before {
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	right: 0;
+	background-image: url('images/bg-footer-top-mobile.svg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 100%;
+	height: 150px;
+	transform: translateY(-95%);
 }
 
 footer li {
@@ -266,6 +342,21 @@ footer a{
         align-items: center;
         justify-content: space-evenly;
     }
+.grow::before{
+    background-image: url('images/bg-section-top-desktop-1.svg');
+}
+
+.grow::after{
+    background-image: url('images/bg-section-bottom-desktop-1.svg');
+}
+
+.users::before{
+    background-image: url('images/bg-section-top-desktop-2.svg');
+}
+
+.users::after{
+    background-image: url('images/bg-section-bottom-desktop-2.svg');
+}
 
     .build > .pink_btn{
         max-width: 15%;
@@ -276,6 +367,10 @@ footer a{
         align-items: center;
         justify-content: space-between;
         padding: 0 35px;
+    }
+
+    footer::before{
+        background-image: url('images/bg-footer-top-desktop.svg');
     }
 
     footer .one{
