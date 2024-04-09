@@ -213,3 +213,65 @@ footer a{
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
+
+@media screen and (min-width:750px){
+    .hero > p{
+        max-width: 50%;
+        margin: 0 auto;
+    }
+
+    .hero_imgbox{
+        max-width: 70%;
+        max-height: 200px;
+        margin-bottom: 500px;
+    }
+
+    .pink_btn{
+        max-width: 40%;
+    }
+
+    .grow,.users,.flow{
+        display: flex;
+        flex-flow: row nowrap;
+        text-align: left;
+        align-items: center;
+        justify-content: space-between;
+        gap: 60px;
+    }
+
+    .flow{
+        flex-direction: row-reverse;
+    }
+
+    .grow p ,.user  p ,.flow p{
+        max-width: 90%;
+    }
+
+    .info_boxes{
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .build > .pink_btn{
+        max-width: 15%;
+    } 
+
+    footer{
+        flex-flow: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 35px;
+    }
+
+    footer .one{
+        margin-top: 80px;
+    }
+
+   footer .newsletter{
+        flex-basis: 45%;
+        margin-right: 20px;
+    }
+    
+}
