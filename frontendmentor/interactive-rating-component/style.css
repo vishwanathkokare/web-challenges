@@ -10,14 +10,140 @@
 }
 
 body{
+    min-height: 100vh;
+    background-color: var(--Very-Dark-Blue);
     font-family: "Overpass", sans-serif;
+    padding: 0 20px;
+    display: grid;
+    place-content: center;
 }
 
+
+h1,button{
+    font-weight: 700;
+}
+
+p,a{font-weight: 400;}
+
+h1{
+    color: var(--White);
+}
+
+p{
+    color: var(--Light-Grey);
+    line-height: 1.75;
+}
+
+a:link,a:visited{
+    color: var(--Light-Grey);
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card{
+    background-color: var(--Dark-Blue);
+    width: 100%;
+    max-width: 400px;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.hero_imgbox{
+    width: 28px;
+    margin: 0;
+}
+
+
+.card p{
+    max-width: 90%;
+}
+
+.btns{
+    margin: 30px 0;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.btn{
+    font-size: 18px;
+    display: inline-block;
+    background-color: var(--Medium-Grey);
+    border-radius: 50%;
+    padding: 18px 24px;
+    text-align: center;
+
+}
+
+.btn:hover{
+    color:var(--Medium-Grey);
+    background-color: var(--Light-Grey);
+}
+
+.btn:active, .clicked , .clicked:hover{
+    color: var(--White);
+    background-color: var(--Orange);
+}
+
+
+.sub_btn{
+    margin: 20px 0;
+    font-size: 15px;
+    letter-spacing: 2px;
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background-color: var(--Orange);
+    color: var(--White);
+    padding: 15px 0;
+}
+
+.sub_btn:hover{
+    background-color: var(--White);
+    color: var(--Orange);
+}
+
+.thankyou{
+    display: none;
+    background-color: var(--Dark-Blue);
+    width: 100%;
+    max-width: 400px;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.illustration{
+    max-width: 50%;
+    margin: 10px auto;
+}
+
+.rate_para{
+    margin: 10px auto;
+    color: var(--Orange);
+    background-color: var(--Light-Grey);
+    border-radius: 20px;
+    width: 50%;
+}
+
+footer{
+    margin-top: 20px;
+    color: white;
+}
 .attribution {
     font-size: 11px;
     text-align: center;
 }
 
-.attribution a {
-    color: hsl(228, 45%, 44%);
+.attribution a,.attribution a:visited {
+    text-decoration: underline;
 }
