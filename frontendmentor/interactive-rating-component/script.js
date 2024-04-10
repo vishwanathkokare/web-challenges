@@ -32,5 +32,7 @@ subBtn.addEventListener('click',()=>{
        card.style.display = 'none';
        thankYou.style.display = 'block';
        rate.innerHTML = rate_value;
+    }else{
+        alert('Please Select Your Ratings.')
     }
 })
